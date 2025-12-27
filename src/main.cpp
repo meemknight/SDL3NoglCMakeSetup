@@ -35,6 +35,8 @@ int main(int argc, char *argv[])
 		SDL_Quit();
 		return 1;
 	}
+	SDL_SetRenderDrawBlendMode(renderer, SDL_BLENDMODE_BLEND);
+
 
 	ImGui::CreateContext();
 	imguiThemes::green();
